@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="stage" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated professor character with chalkboard">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9eef6"/>
+      <stop offset="1" stop-color="#d3dbe8"/>
+    </linearGradient>
+    <linearGradient id="boardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#33604a"/>
+      <stop offset="1" stop-color="#27503d"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="600" fill="url(#bgGrad)"/>
+
+  <!-- CHALKBOARD — big & clean; the AI writes anything here -->
+  <rect x="36" y="36" width="460" height="320" rx="12" fill="#5b4432"/>
+  <rect x="52" y="52" width="428" height="288" rx="6" fill="url(#boardGrad)"/>
+  <!-- chalk tray + chalk -->
+  <rect x="150" y="348" width="220" height="10" rx="5" fill="#4a3626"/>
+  <rect x="180" y="341" width="34" height="7" rx="3.5" fill="#f5f1e6" transform="rotate(-3 197 344)"/>
+  <rect x="232" y="342" width="26" height="6" rx="3" fill="#f4a9a0" transform="rotate(4 245 345)"/>
+
+
+  <!-- PROFESSOR — clean wholesome redesign (same rig ids & pivot coords the engine expects) -->
+  <g id="professor">
+    <!-- ground shadow (softer) -->
+    <ellipse cx="612" cy="562" rx="96" ry="11" fill="#1c2330" opacity="0.10"/>
+
+    <!-- legs + shoes -->
+    <path d="M 578 452 L 572 542 L 598 542 L 606 460 L 618 460 L 626 542 L 652 542 L 646 452 Z" fill="#3e4a63"/>
+    <ellipse cx="585" cy="548" rx="20" ry="8" fill="#4a3728"/>
+    <ellipse cx="639" cy="548" rx="20" ry="8" fill="#4a3728"/>
+
+    <!-- torso group (breathing) — navy blazer, white shirt V, lapels, bow tie -->
+    <g id="torso">
+      <path d="M 552 362 Q 556 338 612 332 Q 668 338 672 362 L 676 468 Q 612 482 548 468 Z" fill="#35507a"/>
+      <path d="M 592 340 L 612 372 L 632 340 L 612 332 Z" fill="#fdfdf9"/>
+      <path d="M 592 340 L 612 332 L 602 378 Z" fill="#2c4367"/>
+      <path d="M 632 340 L 612 332 L 622 378 Z" fill="#2c4367"/>
+      <path d="M 598 350 L 580 340 L 582 362 Z" fill="#d1495b"/>
+      <path d="M 626 350 L 644 340 L 642 362 Z" fill="#d1495b"/>
+      <circle cx="612" cy="351" r="6" fill="#b23a48"/>
+      <circle cx="612" cy="424" r="3.5" fill="#2c4367"/>
+      <circle cx="612" cy="448" r="3.5" fill="#2c4367"/>
+    </g>
+
+    <g id="head">
+      <!-- neck -->
+      <rect x="598" y="314" width="28" height="26" rx="8" fill="#f0bd8e"/>
+      <!-- ears (now clearly peeking out on both sides) -->
+      <circle cx="554" cy="276" r="10" fill="#f6cfa4"/>
+      <circle cx="670" cy="276" r="10" fill="#f6cfa4"/>
+      <!-- face: soft round cheeks, gently tapered chin -->
+      <path d="M 667 272 C 667 306 650 328 612 330 C 574 328 557 306 557 272 C 557 230 580 211 612 211 C 644 211 667 230 667 272 Z" fill="#f6cfa4"/>
+      <!-- rosy cheeks -->
+      <circle cx="574" cy="294" r="7" fill="#f4a9a0" opacity="0.5"/>
+      <circle cx="650" cy="294" r="7" fill="#f4a9a0" opacity="0.5"/>
+      <!-- hair: fuller soft grey with side tufts -->
+      <path d="M 559 252 Q 562 204 612 198 Q 662 204 665 252 Q 652 224 612 222 Q 572 224 559 252" fill="#eceef2"/>
+      <path d="M 560 248 q -7 16 0 32 q 11 -3 13 -14 q -7 -7 -13 -18 Z" fill="#eceef2"/>
+      <path d="M 664 248 q 7 16 0 32 q -11 -3 -13 -14 q 7 -7 13 -18 Z" fill="#eceef2"/>
+
+      <!-- eyes group (blink squash) — bigger, friendlier, double sparkle -->
+      <g id="eyes">
+        <circle cx="588" cy="270" r="12" fill="#ffffff"/>
+        <circle cx="636" cy="270" r="12" fill="#ffffff"/>
+        <circle id="pupil-l" cx="588" cy="270" r="6.5" fill="#2b3038"/>
+        <circle id="pupil-r" cx="636" cy="270" r="6.5" fill="#2b3038"/>
+        <circle cx="590.5" cy="267" r="2" fill="#ffffff"/>
+        <circle cx="638.5" cy="267" r="2" fill="#ffffff"/>
+        <circle cx="585.5" cy="273" r="1" fill="#ffffff"/>
+        <circle cx="633.5" cy="273" r="1" fill="#ffffff"/>
+      </g>
+
+      <!-- glasses — thinner, crisper frames -->
+      <g fill="rgba(255,255,255,0.16)" stroke="#4a5568" stroke-width="2.5">
+        <circle cx="588" cy="268" r="17"/>
+        <circle cx="636" cy="268" r="17"/>
+        <path d="M 605 266 Q 612 261 619 266" fill="none"/>
+        <path d="M 571 266 L 558 260" fill="none"/>
+        <path d="M 653 266 L 666 260" fill="none"/>
+      </g>
+
+      <!-- brows — fuller, softer -->
+      <path id="brow-l" d="M 568 238 Q 586 226 603 235" fill="none" stroke="#c3c9d4" stroke-width="7" stroke-linecap="round"/>
+      <path id="brow-r" d="M 621 235 Q 638 226 656 238" fill="none" stroke="#c3c9d4" stroke-width="7" stroke-linecap="round"/>
+
+      <!-- nose -->
+      <path d="M 612 274 Q 606 292 613 298" fill="none" stroke="#e8b489" stroke-width="4" stroke-linecap="round"/>
+      <!-- moustache — neat, matching the hair -->
+      <path d="M 588 303 Q 612 295 636 303 Q 612 313 588 303" fill="#eceef2"/>
+
+      <!-- mouth — warmer smile -->
+      <g id="mouth">
+        <path id="mouth-smile" d="M 584 315 Q 612 341 640 315" fill="none" stroke="#9c5a4d" stroke-width="5" stroke-linecap="round"/>
+        <ellipse id="mouth-open" cx="612" cy="322" rx="16" ry="10" fill="#8a4a3f" opacity="0"/>
+      </g>
+
+      <!-- graduation cap -->
+      <g id="cap">
+        <path d="M 584 226 Q 612 208 640 226 L 640 234 Q 612 248 584 234 Z" fill="#2b3a55"/>
+        <polygon points="612,182 690,206 612,230 534,206" fill="#1f2d44" stroke="#16202f" stroke-width="2"/>
+        <circle cx="612" cy="206" r="4.5" fill="#e8b84b"/>
+        <g id="tassel">
+          <path d="M 612 206 C 638 208 646 232 644 258" fill="none" stroke="#e8b84b" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="644" cy="262" r="7" fill="#e8b84b"/>
+        </g>
+      </g>
+    </g>
+    <!-- arms — layered in front of the head so raised hands pass in front of head/neck -->
+    <!-- left arm (waves / thinks) -->
+    <g id="arm-left">
+      <path d="M 576 350 C 552 368 542 404 540 440" fill="none" stroke="#35507a" stroke-width="26" stroke-linecap="round"/>
+      <circle cx="538" cy="444" r="11" fill="#f6cfa4"/>
+    </g>
+
+    <!-- right arm + pointer stick (points / writes / explains) — stick now gripped at the hand -->
+    <g id="arm-right">
+      <line x1="690" y1="446" x2="716" y2="488" stroke="#c9a06a" stroke-width="6" stroke-linecap="round"/>
+      <path d="M 648 350 C 672 366 684 400 688 440" fill="none" stroke="#35507a" stroke-width="26" stroke-linecap="round"/>
+      <circle cx="688" cy="444" r="11" fill="#f6cfa4"/>
+    </g>
+
+    <!-- head group -->
+
+    
+  </g>
+</svg>

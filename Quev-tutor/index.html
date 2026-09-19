@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quev AI Professor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html"><img class="brand-logo" src="Landing_page/statics/img/logoo.png" alt="">Quev AI Professor</a>
+      <div class="top-actions">
+        <button id="settings-toggle" class="icon-button" type="button" aria-expanded="false" aria-controls="settings" title="AI settings">⚙</button>
+      </div>
+    </header>
+
+    <section id="settings" class="settings" hidden>
+      <label>Provider <select id="provider"><option value="openrouter">OpenRouter</option><option value="featherless">Featherless</option></select></label>
+      <label>API key <input id="api-key" type="password" autocomplete="off" placeholder="Optional — demo mode works without one"></label>
+      <label>Model <select id="model"><option value="">Automatic</option></select></label>
+      <button id="refresh-models" type="button">Refresh models</button>
+    </section>
+
+    <section class="workspace" aria-label="AI professor workspace">
+      <section class="lesson-side" aria-label="Professor and board">
+        <div class="lesson-stage" id="stage-holder" aria-live="polite">
+          <div class="stage-loading">Preparing the classroom…</div>
+        </div>
+        <section class="related-wrap" aria-labelledby="related-title">
+          <p id="related-title">Related images</p>
+          <div id="related-images" class="related-images"><span class="image-placeholder">Ask a question to add visual references.</span></div>
+        </section>
+      </section>
+
+      <section class="chat-panel" aria-label="Conversation">
+        <div class="chat-head"><span class="status-dot"></span><div><strong>Professor</strong><small id="status">Ready to help</small></div></div>
+        <div id="chat-log" class="chat-log" aria-live="polite">
+          <article class="message professor"><span>Professor</span><p>Hello! What would you like to learn today?</p></article>
+        </div>
+        <form id="ask-form" class="ask-form">
+          <input id="ask-input" type="text" maxlength="500" placeholder="Ask anything…" aria-label="Ask the professor">
+          <button type="submit" aria-label="Send message">➜</button>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <script src="engine.js"></script>
+  <script src="ai-director.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
