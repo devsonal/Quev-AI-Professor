@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="stage" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated Iron Man character with chalkboard">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4e9e6"/>
+      <stop offset="1" stop-color="#e3d3ce"/>
+    </linearGradient>
+    <linearGradient id="boardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#33604a"/>
+      <stop offset="1" stop-color="#27503d"/>
+    </linearGradient>
+    <linearGradient id="armorRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e24b43"/>
+      <stop offset="1" stop-color="#b32628"/>
+    </linearGradient>
+    <linearGradient id="armorGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6d56b"/>
+      <stop offset="1" stop-color="#d4a62d"/>
+    </linearGradient>
+    <linearGradient id="helmetRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ef5b52"/>
+      <stop offset="1" stop-color="#c12f30"/>
+    </linearGradient>
+    <radialGradient id="reactorGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#e8fbff"/>
+      <stop offset="0.45" stop-color="#7ad7f2"/>
+      <stop offset="1" stop-color="#2b8fb8"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="600" fill="url(#bgGrad)"/>
+
+  <!-- CHALKBOARD — big & clean; the AI writes anything here -->
+  <rect x="36" y="36" width="460" height="320" rx="12" fill="#5b4432"/>
+  <rect x="52" y="52" width="428" height="288" rx="6" fill="url(#boardGrad)"/>
+  <!-- chalk tray + chalk -->
+  <rect x="150" y="348" width="220" height="10" rx="5" fill="#4a3626"/>
+  <rect x="180" y="341" width="34" height="7" rx="3.5" fill="#f5f1e6" transform="rotate(-3 197 344)"/>
+  <rect x="232" y="342" width="26" height="6" rx="3" fill="#f4a9a0" transform="rotate(4 245 345)"/>
+
+  <!-- CHARACTER — same rig ids & pivot coords the engine expects -->
+  <g id="professor">
+    <!-- ground shadow (softer) -->
+    <ellipse cx="612" cy="562" rx="96" ry="11" fill="#1c2330" opacity="0.10"/>
+
+    <!-- legs + shoes / boots -->
+    <path d="M 578 452 L 572 542 L 598 542 L 606 460 L 618 460 L 626 542 L 652 542 L 646 452 Z" fill="url(#armorRed)"/>
+    <path d="M 578 452 L 580 488 L 606 488 L 606 460 Z" fill="url(#armorGold)" opacity="0.92"/>
+    <path d="M 646 452 L 644 488 L 618 488 L 618 460 Z" fill="url(#armorGold)" opacity="0.92"/>
+    <ellipse cx="585" cy="548" rx="20" ry="8" fill="#8a2a24"/>
+    <ellipse cx="639" cy="548" rx="20" ry="8" fill="#8a2a24"/>
+    <path d="M 565 536 Q 585 526 605 536 L 605 550 Q 585 558 565 550 Z" fill="#c12f30"/>
+    <path d="M 619 536 Q 639 526 659 536 L 659 550 Q 639 558 619 550 Z" fill="#c12f30"/>
+    <rect x="572" y="540" width="26" height="5" rx="2" fill="#f6d56b"/>
+    <rect x="626" y="540" width="26" height="5" rx="2" fill="#f6d56b"/>
+
+    <!-- torso group (breathing) — red chest plate, gold abs, arc reactor -->
+    <g id="torso">
+      <path d="M 552 362 Q 556 338 612 332 Q 668 338 672 362 L 676 468 Q 612 482 548 468 Z" fill="url(#armorRed)"/>
+      <path d="M 592 340 L 612 372 L 632 340 L 612 332 Z" fill="url(#armorGold)"/>
+      <path d="M 592 340 L 612 332 L 602 378 Z" fill="#c99722"/>
+      <path d="M 632 340 L 612 332 L 622 378 Z" fill="#c99722"/>
+      <!-- gold chest framing -->
+      <path d="M 574 368 L 612 392 L 650 368 L 646 430 Q 612 442 578 430 Z" fill="url(#armorGold)" opacity="0.95"/>
+      <path d="M 586 378 L 612 396 L 638 378 L 634 424 Q 612 432 590 424 Z" fill="#ef5b52"/>
+      <!-- arc reactor -->
+      <circle cx="612" cy="400" r="16" fill="url(#reactorGlow)"/>
+      <circle cx="612" cy="400" r="10" fill="#d9f7ff"/>
+      <circle cx="612" cy="400" r="5" fill="#7ad7f2"/>
+      <circle cx="612" cy="400" r="2.2" fill="#ffffff"/>
+      <!-- belt / waist gold -->
+      <rect x="562" y="448" width="100" height="14" rx="4" fill="#e6c04a"/>
+      <rect x="598" y="446" width="28" height="18" rx="3" fill="#d4a62d"/>
+      <circle cx="612" cy="455" r="3.5" fill="#f7e39a"/>
+    </g>
+
+    <g id="head">
+      <!-- neck / collar gold -->
+      <rect x="598" y="314" width="28" height="26" rx="8" fill="#d4a62d"/>
+      <rect x="594" y="318" width="36" height="8" rx="3" fill="#f6d56b"/>
+
+      <!-- ear pods / helmet sides -->
+      <circle cx="554" cy="276" r="10" fill="#c12f30"/>
+      <circle cx="670" cy="276" r="10" fill="#c12f30"/>
+      <circle cx="554" cy="276" r="4.5" fill="#f6d56b"/>
+      <circle cx="670" cy="276" r="4.5" fill="#f6d56b"/>
+
+      <!-- helmet face / gold faceplate -->
+      <path d="M 667 272 C 667 306 650 328 612 330 C 574 328 557 306 557 272 C 557 230 580 211 612 211 C 644 211 667 230 667 272 Z" fill="url(#armorGold)" stroke="#b8861f" stroke-width="2"/>
+
+      <!-- cheek highlights -->
+      <circle cx="574" cy="294" r="7" fill="#fff1b0" opacity="0.35"/>
+      <circle cx="650" cy="294" r="7" fill="#fff1b0" opacity="0.35"/>
+
+      <!-- red helmet crown over faceplate -->
+      <path d="M 559 252 Q 562 204 612 198 Q 662 204 665 252 Q 652 224 612 222 Q 572 224 559 252" fill="url(#helmetRed)"/>
+      <path d="M 560 248 q -7 16 0 32 q 11 -3 13 -14 q -7 -7 -13 -18 Z" fill="#e24b43"/>
+      <path d="M 664 248 q 7 16 0 32 q -11 -3 -13 -14 q 7 -7 13 -18 Z" fill="#e24b43"/>
+
+      <!-- eyes group (blink squash) — glowing visor slits -->
+      <g id="eyes">
+        <path d="M 572 266 Q 588 258 604 268 Q 588 276 572 266 Z" fill="#14323d"/>
+        <path d="M 652 266 Q 636 258 620 268 Q 636 276 652 266 Z" fill="#14323d"/>
+        <circle id="pupil-l" cx="588" cy="268" r="4.4" fill="#9af0ff"/>
+        <circle id="pupil-r" cx="636" cy="268" r="4.4" fill="#9af0ff"/>
+        <circle cx="589.6" cy="266.4" r="1.4" fill="#ffffff"/>
+        <circle cx="637.6" cy="266.4" r="1.4" fill="#ffffff"/>
+      </g>
+
+      <!-- brows — helmet ridges -->
+      <path id="brow-l" d="M 568 238 Q 586 226 603 235" fill="none" stroke="#9a2a28" stroke-width="7" stroke-linecap="round"/>
+      <path id="brow-r" d="M 621 235 Q 638 226 656 238" fill="none" stroke="#9a2a28" stroke-width="7" stroke-linecap="round"/>
+
+      <!-- nose / faceplate ridge -->
+      <path d="M 612 274 Q 606 292 613 298" fill="none" stroke="#b8861f" stroke-width="4" stroke-linecap="round"/>
+
+      <!-- mouth plate -->
+      <path d="M 588 303 Q 612 295 636 303 Q 612 313 588 303" fill="#c99722"/>
+      <path d="M 596 304 Q 612 310 628 304" fill="none" stroke="#8a6a18" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- mouth — engine still uses these ids -->
+      <g id="mouth">
+        <path id="mouth-smile" d="M 584 315 Q 612 341 640 315" fill="none" stroke="#8a6a18" stroke-width="5" stroke-linecap="round"/>
+        <ellipse id="mouth-open" cx="612" cy="322" rx="16" ry="10" fill="#6a5014" opacity="0"/>
+      </g>
+
+      <!-- helmet crest used in place of graduation cap (same ids) -->
+      <g id="cap">
+        <path d="M 584 226 Q 612 200 640 226 L 640 234 Q 612 248 584 234 Z" fill="#b32628"/>
+        <polygon points="612,176 678,208 612,226 546,208" fill="#e24b43" stroke="#8a2220" stroke-width="2"/>
+        <circle cx="612" cy="206" r="4.5" fill="#f6d56b"/>
+        <g id="tassel">
+          <path d="M 612 206 C 638 208 646 232 644 258" fill="none" stroke="#f6d56b" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="644" cy="262" r="7" fill="#f6d56b"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- arms — layered in front of the head so raised hands pass in front of head/neck -->
+    <!-- left arm (waves / thinks) -->
+    <g id="arm-left">
+      <path d="M 576 350 C 552 368 542 404 540 440" fill="none" stroke="#e24b43" stroke-width="26" stroke-linecap="round"/>
+      <circle cx="560" cy="392" r="9" fill="#f6d56b"/>
+      <circle cx="538" cy="444" r="14" fill="#d4a62d"/>
+      <circle cx="528" cy="438" r="5" fill="#f6d56b"/>
+      <circle cx="534" cy="456" r="5" fill="#f6d56b"/>
+      <circle cx="548" cy="450" r="5" fill="#f6d56b"/>
+    </g>
+    <!-- right arm + pointer stick -->
+    <g id="arm-right">
+      <line x1="690" y1="446" x2="716" y2="488" stroke="#c9a06a" stroke-width="6" stroke-linecap="round"/>
+      <path d="M 648 350 C 672 366 684 400 688 440" fill="none" stroke="#e24b43" stroke-width="26" stroke-linecap="round"/>
+      <circle cx="664" cy="392" r="9" fill="#f6d56b"/>
+      <circle cx="688" cy="444" r="14" fill="#d4a62d"/>
+      <circle cx="678" cy="438" r="5" fill="#f6d56b"/>
+      <circle cx="684" cy="456" r="5" fill="#f6d56b"/>
+      <circle cx="698" cy="450" r="5" fill="#f6d56b"/>
+    </g>
+  </g>
+</svg>

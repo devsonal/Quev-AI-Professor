@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="stage" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated Spider-Man character with chalkboard">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3e8ea"/>
+      <stop offset="1" stop-color="#e0cfd4"/>
+    </linearGradient>
+    <linearGradient id="boardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#33604a"/>
+      <stop offset="1" stop-color="#27503d"/>
+    </linearGradient>
+    <linearGradient id="suitRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ef3b3a"/>
+      <stop offset="1" stop-color="#b71e28"/>
+    </linearGradient>
+    <linearGradient id="suitBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b6fd4"/>
+      <stop offset="1" stop-color="#234a9a"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="600" fill="url(#bgGrad)"/>
+
+  <rect x="36" y="36" width="460" height="320" rx="12" fill="#5b4432"/>
+  <rect x="52" y="52" width="428" height="288" rx="6" fill="url(#boardGrad)"/>
+  <rect x="150" y="348" width="220" height="10" rx="5" fill="#4a3626"/>
+  <rect x="180" y="341" width="34" height="7" rx="3.5" fill="#f5f1e6" transform="rotate(-3 197 344)"/>
+  <rect x="232" y="342" width="26" height="6" rx="3" fill="#f4a9a0" transform="rotate(4 245 345)"/>
+
+  <g id="professor">
+    <ellipse cx="612" cy="562" rx="96" ry="11" fill="#1c2330" opacity="0.10"/>
+
+    <path d="M 578 452 L 572 542 L 598 542 L 606 460 L 618 460 L 626 542 L 652 542 L 646 452 Z" fill="url(#suitBlue)"/>
+    <path d="M 582 470 L 596 470 L 594 542 L 578 542 Z" fill="#b71e28" opacity="0.85"/>
+    <path d="M 642 470 L 628 470 L 630 542 L 646 542 Z" fill="#b71e28" opacity="0.85"/>
+    <ellipse cx="585" cy="548" rx="20" ry="8" fill="#1b2a4a"/>
+    <ellipse cx="639" cy="548" rx="20" ry="8" fill="#1b2a4a"/>
+    <path d="M 565 536 Q 585 526 605 536 L 605 550 Q 585 558 565 550 Z" fill="#234a9a"/>
+    <path d="M 619 536 Q 639 526 659 536 L 659 550 Q 639 558 619 550 Z" fill="#234a9a"/>
+
+    <g id="torso">
+      <path d="M 552 362 Q 556 338 612 332 Q 668 338 672 362 L 676 468 Q 612 482 548 468 Z" fill="url(#suitBlue)"/>
+      <path d="M 592 340 L 612 372 L 632 340 L 612 332 Z" fill="url(#suitRed)"/>
+      <path d="M 592 340 L 612 332 L 602 378 Z" fill="#9a1822"/>
+      <path d="M 632 340 L 612 332 L 622 378 Z" fill="#9a1822"/>
+      <path d="M 574 356 Q 612 348 650 356 L 656 430 Q 612 452 568 430 Z" fill="url(#suitRed)"/>
+      <path d="M 612 352 L 628 402 L 612 448 L 596 402 Z" fill="#234a9a" opacity="0.35"/>
+      <path d="M 590 372 L 634 372" stroke="#1d2c4a" stroke-width="2"/>
+      <path d="M 584 396 L 640 396" stroke="#1d2c4a" stroke-width="2"/>
+      <path d="M 582 420 L 642 420" stroke="#1d2c4a" stroke-width="2"/>
+      <path d="M 598 356 L 588 430" stroke="#1d2c4a" stroke-width="2"/>
+      <path d="M 626 356 L 636 430" stroke="#1d2c4a" stroke-width="2"/>
+      <polygon points="612,368 624,388 612,408 600,388" fill="#f4f7fb" stroke="#1d2c4a" stroke-width="2"/>
+    </g>
+
+    <g id="head">
+      <rect x="598" y="314" width="28" height="26" rx="8" fill="#b71e28"/>
+      <circle cx="554" cy="276" r="10" fill="#b71e28"/>
+      <circle cx="670" cy="276" r="10" fill="#b71e28"/>
+
+      <path d="M 667 272 C 667 306 650 328 612 330 C 574 328 557 306 557 272 C 557 230 580 211 612 211 C 644 211 667 230 667 272 Z" fill="url(#suitRed)" stroke="#8e1820" stroke-width="2"/>
+      <circle cx="574" cy="294" r="7" fill="#ff6a62" opacity="0.28"/>
+      <circle cx="650" cy="294" r="7" fill="#ff6a62" opacity="0.28"/>
+
+      <path d="M 559 252 Q 562 204 612 198 Q 662 204 665 252 Q 652 224 612 222 Q 572 224 559 252" fill="#d62832"/>
+      <path d="M 560 248 q -7 16 0 32 q 11 -3 13 -14 q -7 -7 -13 -18 Z" fill="#ef3b3a"/>
+      <path d="M 664 248 q 7 16 0 32 q -11 -3 -13 -14 q 7 -7 13 -18 Z" fill="#ef3b3a"/>
+      <path d="M 572 220 L 612 248 L 652 220" fill="none" stroke="#1d2c4a" stroke-width="2"/>
+      <path d="M 564 248 L 612 278 L 660 248" fill="none" stroke="#1d2c4a" stroke-width="2"/>
+
+      <g id="eyes">
+        <ellipse cx="588" cy="270" rx="16" ry="13" fill="#f7fbff" stroke="#1d2c4a" stroke-width="3"/>
+        <ellipse cx="636" cy="270" rx="16" ry="13" fill="#f7fbff" stroke="#1d2c4a" stroke-width="3"/>
+        <circle id="pupil-l" cx="588" cy="272" r="5.2" fill="#1d2c4a"/>
+        <circle id="pupil-r" cx="636" cy="272" r="5.2" fill="#1d2c4a"/>
+        <circle cx="590.5" cy="268" r="1.6" fill="#ffffff"/>
+        <circle cx="638.5" cy="268" r="1.6" fill="#ffffff"/>
+      </g>
+
+      <path id="brow-l" d="M 568 238 Q 586 226 603 235" fill="none" stroke="#1d2c4a" stroke-width="7" stroke-linecap="round"/>
+      <path id="brow-r" d="M 621 235 Q 638 226 656 238" fill="none" stroke="#1d2c4a" stroke-width="7" stroke-linecap="round"/>
+      <path d="M 612 274 Q 606 292 613 298" fill="none" stroke="#8e1820" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 588 303 Q 612 295 636 303 Q 612 313 588 303" fill="#9a1822"/>
+
+      <g id="mouth">
+        <path id="mouth-smile" d="M 584 315 Q 612 341 640 315" fill="none" stroke="#6a1218" stroke-width="5" stroke-linecap="round"/>
+        <ellipse id="mouth-open" cx="612" cy="322" rx="16" ry="10" fill="#4a0e12" opacity="0"/>
+      </g>
+
+      <g id="cap">
+        <path d="M 584 226 Q 612 200 640 226 L 640 234 Q 612 248 584 234 Z" fill="#b71e28"/>
+        <polygon points="612,176 678,208 612,226 546,208" fill="#ef3b3a" stroke="#8e1820" stroke-width="2"/>
+        <circle cx="612" cy="206" r="4.5" fill="#f4f7fb"/>
+        <g id="tassel">
+          <path d="M 612 206 C 638 208 646 232 644 258" fill="none" stroke="#3b6fd4" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="644" cy="262" r="7" fill="#3b6fd4"/>
+        </g>
+      </g>
+    </g>
+
+    <g id="arm-left">
+      <path d="M 576 350 C 552 368 542 404 540 440" fill="none" stroke="#3b6fd4" stroke-width="26" stroke-linecap="round"/>
+      <circle cx="538" cy="444" r="14" fill="#b71e28"/>
+      <circle cx="528" cy="438" r="5" fill="#ef3b3a"/>
+      <circle cx="534" cy="456" r="5" fill="#ef3b3a"/>
+      <circle cx="548" cy="450" r="5" fill="#ef3b3a"/>
+    </g>
+    <g id="arm-right">
+      <line x1="690" y1="446" x2="716" y2="488" stroke="#c9a06a" stroke-width="6" stroke-linecap="round"/>
+      <path d="M 648 350 C 672 366 684 400 688 440" fill="none" stroke="#3b6fd4" stroke-width="26" stroke-linecap="round"/>
+      <circle cx="688" cy="444" r="14" fill="#b71e28"/>
+      <circle cx="678" cy="438" r="5" fill="#ef3b3a"/>
+      <circle cx="684" cy="456" r="5" fill="#ef3b3a"/>
+      <circle cx="698" cy="450" r="5" fill="#ef3b3a"/>
+    </g>
+  </g>
+</svg>
