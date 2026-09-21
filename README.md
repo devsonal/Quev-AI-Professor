@@ -7,6 +7,9 @@ QuevAI Prof is an interactive AI learning platform that combines conversational 
 Instead of returning a wall of text, QuevAI Prof is designed to **explain concepts, demonstrate ideas visually, and guide learners through a structured teaching experience.**
 
 ---
+<p align="center">
+  <img src="https://i.pinimg.com/736x/4f/49/4a/4f494a4078ac5264c908b874d6e389d0.jpg" alt="Quev banner" width="100%">
+</p>
 
 ## ✨ Why QuevAI Prof?
 
