@@ -2,11 +2,11 @@
 
 > **An AI professor that doesn't just answer — it teaches visually.**
 
-## **Try Now** : https://prof-quev-ai.xo.je/ 
-
 QuevAI Prof is an interactive AI learning platform that combines conversational AI, an animated professor, and an interactive visual whiteboard to turn questions into engaging learning experiences.
 
 Instead of returning a wall of text, QuevAI Prof is designed to **explain concepts, demonstrate ideas visually, and guide learners through a structured teaching experience.**
+
+## **Try Now** : https://prof-quev-ai.xo.je/ 
 
 ---
 <p align="center">
