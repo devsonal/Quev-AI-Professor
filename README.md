@@ -144,13 +144,11 @@ The public project currently includes a web frontend built with:
 * HTML5
 * CSS3
 * JavaScript
-* Python
-* Flask
 * AI/API integration
 * Font Awesome
 * Google Fonts
 
-The project uses a web-based architecture so the learning experience can run directly in a browser.
+The project uses a web-based architecture so the learning experience can run **directly in a browser.**
 
 ---
 
